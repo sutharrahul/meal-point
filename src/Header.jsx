@@ -3,7 +3,7 @@ import mealLogo from "./assets/icons8-meal-64.png";
 
 function Header() {
   return (
-    <nav className="bg-white dark:bg-gray-800  ">
+    <nav className="bg-white dark:bg-gray-800 sticky top-0 ">
       <div className="px-8 mx-auto max-w-7xl">
         <div className="flex items-center justify-between h-16">
           <div className=" flex items-center">

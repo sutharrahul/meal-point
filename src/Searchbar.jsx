@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function Searchbar({ onSearch, loading }) {
   const [search, setSearch] = useState("");
   return (
-    <div className="mt-14">
+    <div className=" bg-white w-full p-5 sticky top-16">
       <div className=" relative xl:px-80 lg:px-20 md:px-10 sm:px-5 px-2 flex ">
         <input
           value={search}

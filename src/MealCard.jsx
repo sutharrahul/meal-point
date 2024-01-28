@@ -8,7 +8,12 @@ export default function MealCard({ data }) {
         <img className="" src={strMealThumb} alt={strMeal} />
       </div>
       <div className="w-2/3 p-4">
-        <h1 className="text-2xl font-bold text-gray-900">{strMeal}</h1>
+        <h1
+          className="text-2xl font-bold text-gray-900 line-clamp-1"
+          title={strMeal}
+        >
+          {strMeal}
+        </h1>
         <p className="mt-2 text-sm text-gray-600 line-clamp-2">
           {strInstructions}
         </p>
