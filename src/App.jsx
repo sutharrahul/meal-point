@@ -4,6 +4,7 @@ import Searchbar from "./Searchbar";
 import { searchMealByName } from "./service";
 import MealCard from "./MealCard";
 import LoadingCard from "./LoadingCard";
+import SearchResult from "./SearchResult";
 
 function App() {
   const [mealResult, setMealResult] = useState([]);
@@ -20,16 +21,7 @@ function App() {
     <>
       <Header />
       <Searchbar onSearch={onSearch} loading={loading} />
-      {loading && (
-        <>
-          <LoadingCard />
-          <LoadingCard />
-        </>
-      )}
-      <div>
-        {!loading &&
-          mealResult?.map((meal) => <MealCard key={meal.idMeal} data={meal} />)}
-      </div>
+      <SearchResult meals={mealResult} loading={loading} />
     </>
   );
 }
