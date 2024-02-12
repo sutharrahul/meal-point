@@ -1,8 +1,9 @@
-# React + Vite
+# Meal-Point
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Its's meal app where we can fine any food and how to make
+  ![Home page](/src/assets/image.png)
 
-Currently, two official plugins are available:
+## Find Food
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- We can simply search any food name and chose any one. and youtube link is available so can watch the video how its make.
+  ![Search result](/src/assets/image-1.png)

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function MealCard({ data }) {
-  const { strMeal, strArea, strInstructions, strMealThumb, strYoutube } = data;
+  const { strMeal, strInstructions, strMealThumb, strYoutube } = data;
   return (
     <div className="flex max-w-md overflow-hidden bg-white rounded-lg shadow-lg mt-4">
       <div className="w-1/3 bg-cover bg-landscape">

@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const mealDbBaseUrl = "https://www.themealdb.com/api/json/v1/1/";
+const mealDbBaseUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 export async function searchMealByName({ name }) {
-  const res = await axios.get(mealDbBaseUrl + `search.php?s=${name}`);
+  const res = await axios.get(mealDbBaseUrl + name);
   if (res.status == 200) {
     return res.data;
   }
